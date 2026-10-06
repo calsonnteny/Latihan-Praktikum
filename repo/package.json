@@ -1,0 +1,19 @@
+{
+  "name": "praktikum-perpustakaan",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "dev": "tsx src/p1-setup.ts",
+    "p1": "tsx src/p1-setup.ts",
+    "p2": "tsx src/p2-tipe.ts",
+    "p3": "tsx src/p3-generik.ts",
+    "p4": "tsx src/p4-async.ts"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "tsx": "4.23.12"
+  }
+}

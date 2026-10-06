@@ -1,0 +1,52 @@
+Biar gampang, saya bagi jadi dua bagian: cara menjalankannya di laptop, lalu cara memakainya saat lab.
+
+## Bagian 1: Menjalankan di laptop (sekali saja, sebelum lab)
+
+**1. Install Node.js**
+Download versi LTS di nodejs.org lalu install (next-next saja). Ini program yang menjalankan kode JavaScript/TypeScript di laptop. Tes: buka Command Prompt (Windows) atau Terminal, ketik `node -v`. Kalau muncul angka versi, berarti sudah terpasang.
+
+**2. Ekstrak zip dan buka di VS Code**
+Ekstrak `praktikum-perpustakaan.zip`, lalu buka folder `repo` di VS Code (File > Open Folder). Kalau belum punya VS Code, download di code.visualstudio.com.
+
+**3. Buka terminal di VS Code**
+Menu Terminal > New Terminal. Terminal akan terbuka di bawah, sudah berada di dalam folder proyek.
+
+**4. Install paket**
+Ketik lalu Enter:
+```
+npm install
+```
+Ini mengunduh TypeScript dan tsx (butuh internet, tunggu beberapa detik). Akan muncul folder baru `node_modules`, itu normal.
+
+**5. Jalankan contoh**
+```
+npm run p1
+npm run p2
+npm run p3
+npm run p4
+```
+Tiap perintah menjalankan satu file di folder `src`. Hasilnya muncul di terminal. Kalau semuanya keluar tanpa tulisan merah, berarti sudah beres.
+
+**6. Cek tipe**
+```
+npm run check
+```
+Kalau tidak ada tulisan apa-apa, berarti tidak ada kesalahan tipe. Kalau ada, baris dan penyebab errornya ditunjukkan.
+
+## Bagian 2: Memakainya saat lab
+
+Repo ini sebagai contekan, bukan untuk dijalankan ulang. Caranya:
+
+1. Buka repo GitHub-mu di browser.
+2. Baca `README.md`: di situ ada perintah setup dari nol dan pola kode yang sering dipakai.
+3. Kalau soal minta bikin fungsi generik, buka `src/p3-generik.ts` dan lihat polanya. Jangan salin mentah, ubah sesuai soal.
+4. Kalau lupa cara bikin proyek baru, ikuti bagian "Setup dari nol" di README, yaitu `npm init -y`, `npm i -D typescript tsx`, dan seterusnya.
+
+## Kalau ada error
+
+Error yang paling sering untuk pemula:
+- **`npm` tidak dikenali**: Node.js belum terpasang, atau terminal belum ditutup lalu dibuka lagi setelah install.
+- **`Cannot find module './types.js'`**: impor harus pakai akhiran `.js`, meskipun file aslinya `.ts`. Ini sudah dibahas di TP-04c.
+- **Tulisan merah dari `tsc`**: baca nama file dan nomor barisnya, lalu perbaiki di baris itu.
+
+Kalau sudah dicoba dan masih ada yang bingung, kirim saja tulisan error-nya ke saya.
